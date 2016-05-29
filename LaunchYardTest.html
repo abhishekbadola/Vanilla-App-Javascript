@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Launch Yard Test Page</title>
+	<!-- Stylesheets are here -->
+	<link type="text/css" rel="stylesheet" href="CSS/LaunchYardTest.css">
+</head>
+<body>
+	<div><h2>Launch Yard Skill Test</h2></div>
+	<span>
+		Search :
+		<input type="text" id="jsonText" onKeyUp="searchResults()">
+	</span>
+	<table id="jsonList" class="jsonTable">
+		<thead>
+			<tr>
+				<td>Name</td>
+				<td>Designation</td>
+				<td>Avatar</td>
+			</tr>
+		</thead>
+	</table>
+	<input type="button" id="newEntry" value="Add New Entry" onClick="addDetails()">
+
+	<!-- Scripts are here -->
+	<script type="text/javascript" src="JS/LaunchYardTest.js"></script>
+</body>
+</html>
