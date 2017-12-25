@@ -1,4 +1,4 @@
-# Launch-Yard-Test-Repository
+# Add/Update/Delete/Search (Vanilla Javascript)
 1) Displaying data from JSON, Searching data, Adding a new skill (only if search result doesn't give any result).
 2) Search results will be displayed on the basis of string you enter in the search box. Search will work directly upon entering the word.
 3) If the searched word or string is a substring of "name or designation" it will show those results to you.
