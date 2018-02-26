@@ -87,9 +87,11 @@ function searchResults() {
 }
 
 function addDetails() {
+	var name = document.getElementById("nameField").value,
+		designation = document.getElementById("designationField").value;
 	var newDetails = {
-		"name": document.getElementById("nameField").value,
-		"designation": document.getElementById("designationField").value,
+		"name": name,
+		"designation": designation,
 		"avatar": "http://coenraets.org/apps/angular-directory/pics/james_king.jpg"
 	};
 	jsonList.push(newDetails);
