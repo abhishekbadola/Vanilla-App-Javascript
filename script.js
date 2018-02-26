@@ -89,16 +89,22 @@ function searchResults() {
 function addDetails() {
 	var name = document.getElementById("nameField").value,
 		designation = document.getElementById("designationField").value;
-	var newDetails = {
-		"name": name,
-		"designation": designation,
-		"avatar": "http://coenraets.org/apps/angular-directory/pics/james_king.jpg"
-	};
-	jsonList.push(newDetails);
-	jsonList = sortByName(jsonList, 'name');
-	document.getElementById("jsonText").value = '';
-	generateData();
-	alert("Entry has been Saved succesfully!!! Click OK!!!");
+
+	if(name && designation){
+		var newDetails = {
+			"name": name,
+			"designation": designation,
+			"avatar": "http://coenraets.org/apps/angular-directory/pics/james_king.jpg"
+		};
+		jsonList.push(newDetails);
+		jsonList = sortByName(jsonList, 'name');
+		document.getElementById("jsonText").value = '';
+		generateData();
+		alert("Entry has been Saved succesfully!!! Click OK!!!");
+	}
+	else{
+		alert("Enter the correct details !!!");
+	}
 }
 
 function generateData() {
